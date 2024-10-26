@@ -1,0 +1,13 @@
+[package]
+name = "tree_of_life"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = { version = "0.15.0-rc.1", features = ["wayland"] }
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
